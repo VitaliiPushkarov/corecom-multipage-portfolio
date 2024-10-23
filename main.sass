@@ -1,0 +1,1105 @@
+$title-fz: 84px
+$title-lh: 84px
+$subtitle-fz: 22px
+$subtitle-lh: 44px
+
+$main-c: #5659C8
+$dark-liliac: #65678b
+$light-liliac: #dcdffd
+$black: #0e0e15
+$grey: #a7abd0
+$lil: #b5baf8
+$green: #7fd14d
+
+
+*
+    box-sizing: border-box
+body
+    color: #fff
+    background-color: #035FD6
+    font-family: Montserrat, sans-serif
+    font-weight: 500
+    font-size: 14px
+    line-height: 18px
+    margin: 0
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary
+    display: block
+h1,h2,h3,h4,h5,h6,p
+    margin: 0
+p
+    color: #fff
+    font-weight: 400
+    font-size: 18px
+    line-height: 18px
+    &.italic
+        font-style: italic
+a
+    text-decoration: none
+    color: $black
+h3
+    font-size: 24px
+    line-height: 30px
+img
+    vertical-align: middle
+    max-width: 100%
+    display: inline-block
+    object-fit: cover
+.container
+    max-width: 1366px
+    margin: 0 auto
+    padding-left: 56px
+    padding-right: 56px
+.section
+    margin-top: 0
+    margin-bottom: 0
+    padding-top: 40px
+    padding-bottom: 74px
+    &.hero-sec
+        margin-top: 100px
+    &.section-100vh
+        height: 100vh
+        display: flex
+        justify-content: center
+        align-items: center
+.mt-72
+    margin-top: 72px
+.mb-32
+    margin-bottom: 32px
+.mt-16
+    margin-top: 16px
+.white-bg
+    background-color: #fff
+/* Padding */
+.padding-top-0
+    padding-top: 0
+.padding-bottom-55
+    padding-bottom: 55px
+.title-wrapper
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-bottom: 32px
+.title
+    color: $black
+    text-transform: uppercase
+    font-size: 38px
+    line-height: 38px
+.subtitle
+    color: $dark-liliac
+    font-size: $subtitle-fz
+    font-weight: 600
+    line-height: $subtitle-lh
+    text-transform: uppercase
+.h1
+    font-size: 54px
+    line-height: 110%
+    text-transform: uppercase
+    font-weight: 700
+    span
+        color: $green
+.h6
+    color: $light-liliac
+    font-size: 18px
+    line-height: 22px
+    font-weight: 400
+    text-transform: uppercase
+.h4
+    font-size: 32px
+    font-weight: 400
+    line-height: 32px
+    color: $black
+.paragraph-big
+    font-size: 24px
+    font-weight: 600
+    text-transform: uppercase
+    color: $black
+    line-height: 160%
+    .main-c
+        color: $main-c
+.text-upper
+    text-transform: uppercase
+/* Colors and Backgrounds */
+.black
+    color: $black
+.light-liliac
+    color: $light-liliac
+.dark-liliac
+    color: $dark-liliac
+.main-c
+    color: $main-c
+.lil
+    color: $lil
+.lil-bg
+    background-color: $lil
+/* Btn */
+.btn
+    padding: 14px 32px 12px
+    display: flex
+    align-items: center
+    justify-content: center
+    white-space: nowrap
+    font-weight: 500
+    font-size: 26px
+    line-height: 32px
+    border-radius: 100px
+    transition: all .3s ease-in-out
+    &.green
+        border: 1px solid $green
+        background-color: transparent
+        color: $green
+        &:hover
+            background-color: $green
+            color: #fff
+    &.black
+        background-color: $black
+        color: #fff
+        border-radius: 10px
+        -webkit-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75)
+        -moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75)
+        box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75)
+        padding: 20px 32px
+        &:hover
+            background-color: #035FD6
+    &.transparent
+        background-color: $green
+        color: #fff 
+        border: 1px solid $green
+        &:hover
+            background-color: transparent
+            color: $black
+/* Content Wrapper */
+.content-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 48px
+    .hero-img
+        width: 100%
+        height: 100%
+    .benefits-img
+        height: 480px
+        width: 100%
+    
+/* Text Wrapper */
+.all-text-wrapper
+    display: flex
+    flex-direction: column
+    gap: 32px
+    &.justify-center
+        padding: 100px 0px 100px 0px
+        align-items: flex-start
+        p
+            color: $black
+    .point-text
+        color: #ff9e00
+        font-size: 16px
+        text-transform: uppercase
+    .h4
+        text-transform: uppercase
+    hr
+        margin: 0
+        border: none
+        width: 50px 
+        height: 3px
+        background-color: #035FD6
+        &.white
+            background-color: #fff
+    .benefits-items
+        display: flex
+        gap: 16px
+    .benefits-item
+        padding: 16px 48px 16px 32px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        background-color: #023e8a
+        gap: 16px
+        border-radius: 10px
+        .paragraph-big
+            color: #fff
+            font-size: 32px
+        hr
+            margin: 0
+            width: 45px
+            height: 3px
+            background-color: #ff9e00
+            border: none
+    .points-wrapper
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 16px
+        .points-item
+            display: flex
+            align-items: center
+            gap: 10px
+            &.flex-start
+                align-items: flex-start
+            .check-container
+                display: flex
+                justify-content: center
+                align-items: center
+                background-color: #035FD6
+                border-radius: 10px
+                height: 26px
+                width: 26px
+                flex: none
+                svg
+                    width: 18px
+                    height: 18px
+            .points-descr
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                gap: 6px
+                .paragraph-big
+                    line-height: 110%
+                    font-size: 22px
+    ul
+        margin: 0
+        padding: 0
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 12px
+        margin-left: 12px
+        li
+            font-size: 18px
+            color: $black
+            &::marker
+                color: $green
+                width: 18px
+                height: 18px
+    .contacts-wrapper
+        display: flex
+        flex-direction: column 
+        align-items: flex-start
+        gap: 32px
+        .contacts-item
+            display: flex
+            align-items: center
+            gap: 16px
+            .img-wrapper
+                display: flex
+                align-items: center
+                justify-content: center
+                border-radius: 100%
+                background-color: $green 
+                width: 64px
+                height: 64px
+                svg
+                    fill: $black
+                    width: 32px
+                    height: 32px
+            .contacts-descr
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                .paragraph-big
+                    color: #fff
+                .contacts-link
+                    font-size: 18px
+                    color: #fff
+                    &:hover
+                        color: $green
+
+/* Navbar */
+.nav-wrap
+    position: relative
+    z-index: 1000
+    top: 0
+.navbar
+    bottom: auto
+    left: 0%
+    right: 0%
+    top: 0%
+    border: 1px solid #fff
+    border-radius: 10px
+    background-color: #035FD6
+    max-width: 1254px
+    margin-left: auto
+    margin-right: auto
+    &.fixed
+        position: fixed
+        z-index: 1000
+.container-m.nav
+    justify-content: center
+    align-items: center
+    height: 68px
+    padding-left: 56px
+    padding-right: 56px
+    padding-top: 0
+    padding-bottom: 0
+    margin-right: auto
+    margin-left: auto
+    display: flex
+.navmenu
+    float: right
+    position: relative
+.nav-brand
+    float: left
+    color: #fff
+    text-decoration: none
+    font-weight: 700
+    position: relative
+    &:hover
+        color: $green
+.brand-logo
+    justify-content: flex-start
+    align-items: center
+    display: flex
+    font-size: 26px
+    margin-right: auto
+.navlink
+    vertical-align: top
+    color: #fff
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    padding: 20px
+    text-decoration: none
+    display: inline-block
+    position: relative
+    font-size: 20px
+    font-weight: 400
+    &:hover
+        color: $green
+.m-wrap
+    display: flex
+    margin-left: auto
+    a
+        background-color: #fff
+        border-radius: 10px
+        padding: 10px 20px
+        border: 1px solid #fff
+        font-size: 20px
+        color: $black
+        text-decoration: none
+        font-weight: 400
+        transition: .2s all ease-in-out
+        &:hover
+            background-color: $black
+            color: #fff
+.burger-menu
+    display: none
+    flex-direction: column
+.burger-menu div 
+  width: 25px
+  height: 3px
+  background-color: #fff
+  margin: 2px 0
+.nav-overlay 
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index: 999 /* Ensure the overlay is below the navbar but above other content */
+.white
+    color: #fff
+                
+/* Grid Templates */
+.grid-2-col
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 16px
+    grid-auto-rows: auto
+    .box-wrapper
+        border-radius: 10px
+        padding: 32px
+        border: 1px solid #fff
+        .box-text
+            display: flex
+            align-items: flex-start
+            justify-content: space-between
+            flex-direction: column
+            gap: 26px
+            overflow: hidden
+            max-width: 400px
+        &:first-of-type
+            background-color: $main-c
+        &:nth-of-type(2)
+            background-color: $green
+    .full-box-wrapper
+        display: flex
+        padding: 32px
+        justify-content: space-between
+        grid-area: 3/1/4/3
+        background-color: #fff
+        border-radius: 10px
+        .full-box-text
+            display: flex
+            align-items: flex-start
+            flex-direction: column
+            justify-content: space-between
+            padding: 20px 0
+            max-width: 580px
+        .box-img
+            width: 480px
+            height: 300px
+            object-fit: cover
+            border-radius: 10px
+            border: 1px solid $black
+.all-box-wrapper
+    display: flex
+    flex-direction: column
+    background-color: #fff
+    border-radius: 10px
+    padding: 32px
+    gap: 42px
+.box-title
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 16px
+    padding: 0px 16px
+    text-align: center
+    .point-text
+        color: #ff9e00
+        font-size: 16px
+        text-transform: uppercase
+    hr
+        width: 40px
+        height: 3px
+        background-color: #023e8a
+        margin: 0
+        border: none
+        &.white
+            background-color: #fff
+    p
+        max-width: 680px
+        a
+            color: #035FD6
+            &:hover
+                color: $black
+.subhero-text
+    text-align: center
+.grid-3-col
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    gap: 16px
+    .box-item
+        background-color: #fff
+        padding: 16px
+        border-radius: 10px
+        border: 1px solid $black
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 16px
+        .img-box
+            border: 1px solid $black
+            border-radius: 10px
+            max-height: 250px
+            width: 100%
+        .text-box
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            gap: 12px
+            .paragraph
+                color: #444
+                font-weight: 600
+                font-size: 20px
+.layout-grid
+    display: grid
+    grid-template-columns: 1fr 1fr 1.5fr
+    grid-auto-rows: auto auto
+    gap: 16px
+    grid-auto-columns: 1fr
+    .layout-grid-box
+        background-color: #fff
+        border-radius: 10px
+        padding: 32px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-between
+        .h4, p
+                color: $black
+        &.padding-0
+            padding: 0
+        .full-img
+            border-radius: 10px
+            position: relative
+            width: 100%
+            height: 100%
+            object-fit: cover
+        &.grid-2
+            grid-area: 2/1/3/3
+            background-color: $green
+        &.grid-3
+            background-color: $green
+            
+/* Swiper */
+.swiper-slide
+    border-radius: 10px
+    flex-direction: column
+    flex: none
+    justify-content: flex-end
+    width: 33.3333%
+    height: 460px
+    display: flex
+    position: relative
+    overflow: hidden
+    .team-card-text
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+        padding: 20px
+        background-color: $green
+        display: flex
+        flex-direction: column
+        gap: 12px
+        .h3, p
+            color: $black
+    .slider-img
+        height: 100%
+        width: 100%
+        object-fit: cover
+        &.full-width
+            object-position: 0 100%
+        &.first
+            object-position: 55% 80%
+.slider-wrapper
+    display: flex
+    justify-content: center
+    margin-top: 12px  
+.swiper-prev, .swiper-next
+    cursor: pointer
+    fill: #fff
+.services-wrapper
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    grid-template-rows: auto
+    gap: 32px
+    .services-box
+        background-color: #fff
+        padding: 32px
+        border-radius: 10px
+        display: flex
+        -webkit-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75)
+        -moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75)
+        box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75)
+        flex-direction: column
+        gap: 16px
+        align-items: flex-start
+        transition: all .1s ease-in-out
+        cursor: pointer
+        .h4,p
+            color: $black
+        .img-container
+            background-color: $green
+            border-radius: 100px
+            padding: 5px
+            width: 64px
+            height: 64px
+            display: flex
+            align-items: center
+            justify-content: center
+            svg
+                width: 32px
+                height: 32px
+                fill: $black
+        &:hover
+            background-color: #fff
+            border-color: $green
+            .img-container
+                background-color: $green
+.services-link
+    display: flex
+    align-items: center
+    gap: 6px
+    cursor: pointer
+    transition: all .2s ease-in-out
+    p
+        text-decoration: underline
+        font-weight: bold
+    svg
+        fill: $black
+    &:hover
+        p
+            color: $main-c
+        svg
+            transform: scaleX(1.2)
+.contacts_wrapper
+    display: grid
+    grid-template-columns: 1.5fr 1fr
+    gap: 10px
+.contacts_form
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 10px
+    label
+        font-size: 20px
+    &-control
+        height: 45px
+        flex: 0 0 auto
+    input,textarea
+        border-radius: 10px
+        width: 100%
+        background-color: $light-liliac
+    input[type="text" i] 
+        padding: 5px
+        font-size: 18px
+    .btn
+        text-transform: uppercase
+        font-weight: 600
+        background-color: $green
+        color: #fff
+        border: 1px solid $green
+        cursor: pointer
+        transition: background-color .2s ease-in-out, color .2s ease-in-out
+        &:hover
+            background-color: #fff
+            color: $green
+.checkbox-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 5px
+input[type="checkbox" i]
+    width: 24px
+    height: 24px
+.contacts_map
+    iframe
+        width: 100%
+        height: 100%
+.footer-sec
+    .container
+        padding: 20px 56px
+        background-color: transparent
+        border: 1px solid #fff
+        border-radius: 10px
+.footer-wrapper
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+    .wrapper
+        display: flex
+        flex-direction: column
+        gap: 25px
+    .h3
+        font-size: 24px
+        color: #fff
+        font-weight: 500
+    h3, .paragraph
+        color: #fff
+    .contacts-wrapper,.points-wrapper
+        display: flex
+        flex-direction: column
+        gap: 10px
+        align-items: flex-start
+    .paragraph
+        font-size: 18px
+        &:hover
+            color: $green
+.cookie-banner 
+  position: fixed
+  bottom: 0
+  color: #fff
+  text-align: center
+  z-index: 1000
+  right: 0
+
+
+.cookie-button 
+    border: 1px solid $dark-liliac
+    background-color: $dark-liliac
+    border-radius: 100px
+    justify-content: center
+    align-items: center
+    width: 100%
+    padding: 10px 22px
+    font-size: 16px
+    font-weight: 400
+    line-height: 20px
+    transition: all .3s
+    display: flex
+    text-transform: uppercase
+    color: #fff
+    cursor: pointer
+    &:hover
+        background-color: $light-liliac
+        color: $black
+
+.cookies-banner
+    grid-row-gap: 0px
+    border: 2px solid $dark-liliac
+    background-color: $light-liliac
+    border-radius: 20px
+    flex-direction: column
+    width: 330px
+    height: auto
+    margin-bottom: 25px
+    margin-left: 56px
+    margin-right: 90px
+    padding: 25px
+    display: flex
+.text-x
+    display: flex
+    margin-bottom: 20px
+    gap: 12px
+.text-banner
+    color: $black
+    font-size: 16px
+    line-height: 20px
+    text-align: left
+.container-tp
+    padding: 20px
+    background-color: #fff
+    border-radius: 15px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 25px
+    .sub-wrapper
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 15px
+        max-width: 600px
+        .h-thankyou
+            color: $black
+            font-size: 36px
+            text-transform: uppercase
+            line-height: 36px
+        .paragraph-big
+            text-transform: none
+            color: $black
+        .btn-tp
+            padding: 15px 20px
+            background-color: $green
+            color: #fff
+            border: 1px solid $green
+            font-size: 20px
+            border-radius: 15px
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            &:hover
+                background-color: #fff
+                color: $green
+    .wrapper-gif
+        width: 100%
+    .gif-subscr
+        height: 300px
+        width: 100%
+        object-fit: cover
+        border-radius: 15px
+    
+/* Tab Content */
+.tab-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 16px
+    border-bottom: 1px solid #fff
+    .tablinks
+        border: none
+        background-color: transparent
+        color: #fff
+        font-size: 22px
+        opacity: .7
+        padding: 12px 0
+        cursor: pointer
+        transition: opacity .2s ease-in-out
+        &:hover
+            opacity: 1
+        &:active
+            opacity: 1
+.tab
+    overflow: hidden
+    border-bottom: 1px solid #fff
+    display: flex
+    justify-content: center
+    align-items: center
+    .tablinks
+        float: left
+        border: none
+        outline: none
+        cursor: pointer
+        padding: 14px 16px
+        transition: 0.2s
+        font-size: 26px
+        background-color: transparent
+        color: #fff
+        opacity: .7
+        &:hover
+            opacity: 1
+    button
+        &:focus
+            opacity: 1
+.tabcontent
+    display: none
+    animation: fadeEffect 1s
+    .tab-item
+        display: flex
+        align-items: center
+        flex-direction: column
+        gap: 16px
+        padding-top: 32px
+        .tab-name
+            display: flex
+            gap: 16px
+            .tab-descr
+                display: flex
+                align-items: flex-start
+                gap: 16px
+                flex-direction: column
+                max-width: 600px
+                .h4
+                    color: #fff
+            .tab-img
+                width: 400px
+                height: 300px
+                border-radius: 10px
+        .services-link
+            svg
+                fill: #fff
+            p
+                &:hover
+                    color: $green
+.accordion-wrapper
+    display: flex
+    justify-content: center
+    flex-direction: column
+.accordion
+    background-color: #fff
+    color: $black
+    cursor: pointer
+    padding: 24px 0
+    font-weight: 600
+    font-size: 22px
+    width: 100%
+    text-align: left
+    border: none
+    border-bottom: 1px solid #444
+    outline: none
+    transition: 0.2s
+    .active, .accordion:hover
+        background-color: #ccc
+    .active:after
+        content: "\2796" /* Unicode character for "minus" sign (-) */
+.panel
+    padding: 0 18px
+    background-color: white
+    max-height: 0
+    overflow: hidden
+    transition: max-height 0.2s ease-out
+.accordion:after 
+  content: '\02795' /* Unicode character for "plus" sign (+) */
+  font-size: 13px
+  color: #777
+  float: right
+  margin-left: 5px
+.slider-button-wrapper
+    display: flex
+    gap: 12px
+    cursor: pointer
+    .right-arrow, .left-arrow
+        background-color: #fff
+        border-radius: 100%
+        &:hover
+            background-color: $green
+    img
+        width: 48px
+        height: 48px
+.testimonial-slider
+    .mask-slider
+        width: auto
+.review-card
+    background-color: #fff
+    grid-column-gap: 16px
+    grid-row-gap: 16px
+    border-radius: 10px
+    flex-direction: column
+    align-items: flex-start
+    width: 480px
+    height: 300px
+    padding: 24px
+    display: flex
+    border: 1px solid $black
+    margin-right: 32px
+    .round-photo
+        width: 64px
+        height: 64px
+        img
+            border-radius: 50%
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &-about
+        grid-column-gap: 12px
+        grid-row-gap: 12px
+        flex-direction: column
+        align-items: flex-start
+        width: 100%
+        display: flex
+        p
+            color: $black
+
+
+@keyframes fadeEffect
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+@media screen and ( max-width: 1440px )
+    .container
+        max-width: 1366px
+    
+@media screen and ( max-width: 991px )
+    .container,.container-m.nav
+        max-width: 768px
+        padding-left: 32px
+        padding-right: 32px
+    .navbar
+        padding-left: 0
+        padding-right: 0
+    .navmenu 
+        display: none
+        flex-direction: column
+        position: fixed
+        padding-top: 20px
+        left: 0
+        width: 100%
+        height: 100vh /* Adjust according to the height of your navbar */
+        background-color: $black
+        z-index: 1001 /* Ensure the nav menu is above the overlay */
+    .navmenu.active 
+        display: block
+        overflow: visible
+        position: absolute
+        left: 0
+        right: 0
+        top: 70px
+    .burger-menu 
+        display: flex
+    .nav-overlay.active 
+        display: block
+    .navlink
+        position: relative
+        display: block
+        padding: 20px
+        font-size: 20px
+    .m-wrap 
+        display: none
+    .title
+        font-size: 64px
+        line-height: 64px
+    .subtitle
+        font-size: 20px
+        line-height: 40px    
+    .h1
+        font-size: 58px
+    .swiper-slide
+        width: 55%
+    .layout-grid
+        grid-template-columns: 1fr 2fr
+        .grid-img
+            grid-area: 1/2/1/3
+        .mobile-none
+            display: none
+        .grid-3
+            grid-area: 3/1/4/3
+    .services-wrapper
+        grid-template-columns: 1fr 1fr
+    .footer-sec
+        .container
+            padding-left: 32px
+            padding-right: 32px
+    .footer-wrapper
+        gap: 15px
+        grid-template-columns: repeat(3,1fr)
+    .grid-2-col
+        .full-box-wrapper
+            flex-flow: wrap
+            .full-box-text
+                gap: 16px
+                max-width: 100%
+            .box-img
+                width: 100%
+    .all-box-wrapper .grid-3-col
+        grid-template-columns: 1fr 1fr
+    .grid-3-col
+        grid-template-columns: 1fr 1fr
+    .content-wrapper
+        grid-template-columns: 1fr
+        gap: 32px
+    .all-text-wrapper.justify-center
+        padding: 0
+
+@media screen and ( max-width: 767px )
+    .container,.container-m.nav
+        max-width: 568px
+        padding-left: 24px
+        padding-right: 24px
+    .title
+        font-size: 48px
+        line-height: 48px
+    .paragraph-big
+        font-size: 20px
+    .contacts_wrapper
+        grid-template-columns: 1fr
+    .contacts_map
+        iframe
+            height: 300px
+    .footer-wrapper
+        grid-template-columns: 1fr 1fr
+        gap: 20px
+    .container-tp
+        flex-direction: column
+    .grid-2-col
+        grid-template-columns: 1fr
+        .full-box-wrapper
+            grid-area: auto
+    .services-wrapper
+        grid-template-columns: 1fr
+    .all-box-wrapper .grid-3-col
+        grid-template-columns: 1fr
+    .grid-3-col
+        grid-template-columns: 1fr
+    .tabcontent .tab-item .tab-name
+        flex-direction: column
+    .tab
+        overflow: auto
+        flex-flow: wrap
+
+@media screen and (max-width: 479px)
+    .container,.container-m.nav
+        max-width: 420px
+        padding-left: 12px
+        padding-right: 12px
+    .title
+        font-size: 36px
+        line-height: 36px
+    .subtitle
+        line-height: 28px
+    .services-wrapper
+        grid-template-columns: 1fr
+    .swiper-slide
+        width: 100%
+    .footer-wrapper
+        grid-template-columns: 1fr
+        gap: 25px
+    .cookies-banner
+        margin-left: auto
+        margin-right: auto
+    .cookie-banner
+        left: 0
+    .h1
+        font-size: 45px
+    .btn.black
+        padding: 15px 10px
+        font-size: 22px
+        line-height: 22px
+    .all-text-wrapper .benefits-item
+        align-items: center
+    .all-text-wrapper .benefits-items
+        flex-direction: column
+        
